@@ -11,7 +11,6 @@ function App() {
       <Header />
       <hr />
       <PrefectureList />
-      <p>a</p>
     </div>
   );
 }

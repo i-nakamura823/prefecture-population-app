@@ -23,9 +23,11 @@ function PrefectureList() {
     <div>
       <ul>
         {datas.map(data => (
-          <li key={data.prefCode}>
-            <p>{data.prefName}</p>
-          </li>
+          <Checkbox
+            name={data.prefName}
+            key={data.prefCode}
+            code={data.prefCode}
+          />
         ))}
       </ul>
     </div>
