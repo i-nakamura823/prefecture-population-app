@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 import Checkbox from './Checkbox'
 
 
-function PrefectureList() {
+function PrefectureList(props) {
   const [datas, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       const res = await fetch(
-        "https://opendata.resas-portal.go.jp/api/v1/prefectures",
+        `https://opendata.resas-portal.go.jp/api/v1/prefectures`,
         { headers: { "X-API-KEY": process.env.REACT_APP_API_KEY } }
       );
       const d = await res.json();
@@ -21,15 +21,14 @@ function PrefectureList() {
 
   return (
     <div>
-      <ul>
-        {datas.map(data => (
-          <Checkbox
-            name={data.prefName}
-            key={data.prefCode}
-            code={data.prefCode}
-          />
-        ))}
-      </ul>
+      {datas.map(data => (
+        <Checkbox
+          name={data.prefName}
+          key={data.prefCode}
+          code={data.prefCode}
+          onChange={props.onChange}
+        />
+      ))}
     </div>
   )
 }

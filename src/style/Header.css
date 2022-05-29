@@ -1,9 +1,10 @@
-.Header{
-    width: auto;
-    height: auto;
+.title{
+    border: solid;
     background-color:aquamarine;
+    margin: 10px 4px 10px 5px;
 }
 
-.title{
-    margin-top: 10px;
+.text{
+    padding-left: 10px;
+    padding-top: 5px;
 }
