@@ -14,9 +14,9 @@ function Prefecture(props) {
             { headers: { "X-API-KEY": process.env.REACT_APP_API_KEY } }
         );
         const d = await res.json();
-        console.log("useEffect populatio dayo!!");
-        console.log(d.result.data);
-        setData(d.result.data);
+        console.log("useEffect population dayo!!");
+        console.log(d.result.data[0].data);
+        setData(d.result.data[0].data);
         setPrefectureName(name);
     }
   },[]);

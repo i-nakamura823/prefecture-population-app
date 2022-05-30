@@ -1,0 +1,16 @@
+.graph-container{
+    width: 80%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.graph-title{
+    margin: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+    border: solid 0.5px rgb(2, 14, 114);
+    color:rgb(30, 108, 177);
+    background-color: aquamarine;
+}
