@@ -6,7 +6,7 @@ function Graph({datas}) {
   console.log(datas);
   return(
     <div>
-      <h2> 人口の推移</h2>
+      <h2>人口の推移</h2>
       <div className='graph'>
         <ResponsiveContainer width="90%" height="90%">
           <LineChart
@@ -14,7 +14,7 @@ function Graph({datas}) {
               top: 10,
               right: 30,
               left: 30,
-              bottom: 20,
+              bottom: 0,
             }}
           >
             <CartesianGrid strokeDasharray="2 2"/>
