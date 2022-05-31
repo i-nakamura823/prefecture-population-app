@@ -1,4 +1,4 @@
-.graph-container{
+/* .graph-container{
     width: 80%;
     height: 100%;
     margin-right: auto;
@@ -13,4 +13,30 @@
     border: solid 0.5px rgb(2, 14, 114);
     color:rgb(30, 108, 177);
     background-color: aquamarine;
+} */
+
+.graph{
+    height: 80vh;
+    margin-top: 10px;
+}
+
+.prefname{
+    margin: 10px;
+    background-color: blanchedalmond;
+    border: solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pname{
+    font-weight: bold;
+    border: solid;
+    padding: 3px;
+    border-radius:10%;
+    margin: 3px;
+    background-color: azure;
+}
+
+h3{
+    font-size:small;
 }
